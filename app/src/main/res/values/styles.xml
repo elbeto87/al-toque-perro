@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AlToquePerro." parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/atp_orange</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/atp_yellow</item>
+
+
+    </style>
+</resources>

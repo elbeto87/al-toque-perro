@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="48dp"
+        tools:context="fragments.PetLostConfirmation">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:paddingHorizontal="32dp"
+            android:text="Confirmación"
+            android:textAlignment="center"
+            android:textColor="#151515"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Asegurate de haber cargado todos los datos correctamente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <TextView
+            android:id="@+id/txtFoundTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="12dp"
+            android:text="¡(pet type) encontrado!"
+            android:textColor="#151515"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/happy_dog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFoundTitle" />
+
+        <TextView
+            android:id="@+id/txtPetType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tipo de mascota:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagen" />
+
+        <TextView
+            android:id="@+id/txtSimilarPetType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet type)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetType"
+            app:layout_constraintTop_toTopOf="@+id/txtPetType" />
+
+        <TextView
+            android:id="@+id/txtPetSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sexo:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetType" />
+
+        <TextView
+            android:id="@+id/txtSimilarPetSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet sex)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetSex"
+            app:layout_constraintTop_toTopOf="@+id/txtPetSex" />
+
+        <TextView
+            android:id="@+id/txtPetSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tamaño:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetSex" />
+
+        <TextView
+            android:id="@+id/txtSimilarPetSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet size)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetSize"
+            app:layout_constraintTop_toTopOf="@+id/txtPetSize" />
+
+        <TextView
+            android:id="@+id/txtPetNose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Hocico:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetSize" />
+
+        <TextView
+            android:id="@+id/txtPetNoseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet nose)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetNose"
+            app:layout_constraintTop_toTopOf="@+id/txtPetNose" />
+
+        <TextView
+            android:id="@+id/txtPetFurLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Largo de pelaje: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetNose" />
+
+        <TextView
+            android:id="@+id/txtPetFurLengthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet fur length)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetFurLength"
+            app:layout_constraintTop_toTopOf="@+id/txtPetFurLength" />
+
+        <TextView
+            android:id="@+id/txtPetFurColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Color de pelaje: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetFurLength" />
+
+        <TextView
+            android:id="@+id/txtPetFurColorValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet fur color)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetFurColor"
+            app:layout_constraintTop_toTopOf="@+id/txtPetFurColor" />
+
+        <TextView
+            android:id="@+id/txtPetEyeColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ojos:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetFurColor" />
+
+        <TextView
+            android:id="@+id/txtSimilarPetEyeColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(pet eye color)"
+            app:layout_constraintStart_toEndOf="@+id/txtPetEyeColor"
+            app:layout_constraintTop_toTopOf="@+id/txtPetEyeColor" />
+
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Perdido el: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPetEyeColor" />
+
+        <TextView
+            android:id="@+id/txtPetDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(dd/mm/aaaa)"
+            app:layout_constraintStart_toEndOf="@+id/txtDateTime"
+            app:layout_constraintTop_toTopOf="@+id/txtDateTime" />
+
+
+        <TextView
+            android:id="@+id/txtComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Comentarios:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateTime" />
+
+        <TextView
+            android:id="@+id/txtCommentsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(comments)"
+            app:layout_constraintStart_toEndOf="@+id/txtComments"
+            app:layout_constraintTop_toTopOf="@+id/txtComments" />
+
+        <Button
+            android:id="@+id/btnPublish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="48dp"
+            android:text="Siguiente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCommentsValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Al Toque Perro</string>
+    <string name="title_activity_home_navigation">HomeNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_google_maps">GoogleMapsActivity</string>
+    <string name="location_permission_denied">Permiso de Localizacion Denegado</string>
+    <string name="permission_required_toast">Se necesita conocer su ubicacion si no es mucha molestia</string>
+    <string name="permission_rationale_location">Necesitamos conocer su ubicación si no es mucha molestia</string>
+    <string name="map_title">Mapa de mascotas</string>
+
+    <string-array name="pet_types">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Tortuga</item>
+        <item>Conejo</item>
+        <item>Hamster</item>
+        <item>Pájaro</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="pet_noses">
+        <item>Chato</item>
+        <item>Puntiagudo</item>
+    </string-array>
+
+    <string-array name="pet_fur_lengths">
+        <item>Largo</item>
+        <item>Medio</item>
+        <item>Corto</item>
+    </string-array>
+
+    <string-array name="pet_fur_colors">
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Marrón</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+    </string-array>
+
+    <string-array name="pet_eye_colors">
+        <item>Azul</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Marrón</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout12"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PetFoundHostYes">
+
+    <Button
+        android:id="@+id/backToMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D36D5E"
+        android:text="VOLVER AL MENÚ PRINCIPAL"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsToFollow8"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/stepsToFollow8"
+        android:layout_width="287dp"
+        android:layout_height="54dp"
+        android:text="3. En el caso de no poder seguir transitando a la mascota por favor contactate con una veterinaria u hogar de tránsito "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsToFollow7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/stepsToFollow7"
+        android:layout_width="288dp"
+        android:layout_height="45dp"
+        android:text="2. Estar atento a un contacto preguntando por la mascota "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsToFollow3" />
+
+    <TextView
+        android:id="@+id/thanksMessage"
+        android:layout_width="277dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center"
+        android:text="Gracias por albergar a la mascota"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stepsToFollow"
+        android:layout_width="318dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="17dp"
+        android:text="El aviso de mascota perdida ya fue publicado. Estos son los pasos a seguir:"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/stepsToFollow3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/stepsToFollow3"
+        android:layout_width="288dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="284dp"
+        android:text="1.  Podés ver la lista de mascotas perdidas, tal vez su dueño haya publicado un anuncio"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="134dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/love_dog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thanksMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

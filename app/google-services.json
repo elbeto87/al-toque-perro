@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "577052019206",
+    "project_id": "altoqueperro-821dd",
+    "storage_bucket": "altoqueperro-821dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577052019206:android:e4fb80fb9cea5c494f5187",
+        "android_client_info": {
+          "package_name": "com.ort.altoqueperro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577052019206-2um7tt9g3hfhotl1qq4rtv477i47cteu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJbQVG3LMv5eEDMZ4s6PpBbCKsiceDfs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577052019206-2um7tt9g3hfhotl1qq4rtv477i47cteu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

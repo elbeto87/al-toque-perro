@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navgraph"
+    app:startDestination="@id/logFragment">
+
+    <fragment
+        android:id="@+id/logFragment"
+        android:name="com.ort.altoqueperro.fragments.LogFragment"
+        android:label="log_fragment"
+        tools:layout="@layout/log_fragment" >
+        <action
+            android:id="@+id/action_logFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_logFragment_to_recoveryPasswordFragment"
+            app:destination="@id/recoveryPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.ort.altoqueperro.fragments.SignUpFragment"
+        android:label="sign_up_fragment"
+        tools:layout="@layout/sign_up_fragment" />
+    <fragment
+        android:id="@+id/recoveryPasswordFragment"
+        android:name="com.ort.altoqueperro.fragments.RecoveryPasswordFragment"
+        android:label="recovery_password_fragment"
+        tools:layout="@layout/recovery_password_fragment" >
+        <action
+            android:id="@+id/action_recoveryPasswordFragment_to_logFragment"
+            app:destination="@id/logFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#D1F8F3"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vetNeighborhood"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="3dp"
+            android:text="Villa Urquiza"
+            android:drawableStart="@drawable/ic_location"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetName"
+            app:layout_constraintEnd_toStartOf="@+id/distancia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/distancia"
+            android:layout_width="103dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vetNeighborhood"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVetName"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:foregroundTint="@color/black"
+            android:text="Tus Huellas"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtVetLogo"
+            app:layout_constraintTop_toBottomOf="@+id/distancia" />
+
+        <TextView
+            android:id="@+id/txtVetAddress"
+            android:layout_width="277dp"
+            android:layout_height="23dp"
+            android:text="Av. Olazabal 4341"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetPhoneNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toEndOf="@+id/txtVetLogo"
+            app:layout_constraintTop_toBottomOf="@+id/txtVetName" />
+
+        <TextView
+            android:id="@+id/txtVetPhoneNumber"
+            android:layout_width="131dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="6dp"
+            android:text="Tel: 4932-1234"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtVetBusinessHours"
+            app:layout_constraintStart_toEndOf="@+id/txtVetLogo"
+            app:layout_constraintTop_toBottomOf="@+id/txtVetAddress" />
+
+        <TextView
+            android:id="@+id/txtVetBusinessHours"
+            android:layout_width="141dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:text="Horarios: L a L 24 hs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtVetPhoneNumber"
+            app:layout_constraintTop_toBottomOf="@+id/txtVetAddress"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/txtVetLogo"
+            android:layout_width="74dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtVetName"
+            app:layout_constraintStart_toEndOf="@+id/txtVetName"
+            app:layout_constraintTop_toBottomOf="@+id/vetNeighborhood"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/atp_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

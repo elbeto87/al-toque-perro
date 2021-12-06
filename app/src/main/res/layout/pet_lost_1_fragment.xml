@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PetLostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pet_lost_root_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="48dp"
+        tools:context=".fragments.PetLost">
+
+        <TextView
+            android:id="@+id/txtTitle1"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="-8dp"
+            android:paddingHorizontal="32dp"
+            android:text="Cargá los datos de la mascota que perdiste"
+            android:textAlignment="center"
+            android:textColor="#151515"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.746"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="* Nombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
+
+        <EditText
+            android:id="@+id/petName"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="2dp"
+            android:hint="Nombre de la mascota"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/titleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="* Tipo de Mascota"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petName" />
+
+        <Spinner
+            android:id="@+id/pet_types_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleType"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/titleSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="* Tamaño"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pet_types_spinner" />
+
+        <RadioGroup
+            android:id="@+id/size_radio"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleSize">
+
+            <RadioButton
+                android:id="@+id/radio_big_pet"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Grande" />
+
+            <RadioButton
+                android:id="@+id/radio_medium_pet"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Mediano" />
+
+            <RadioButton
+                android:id="@+id/radio_small_pet"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Chico" />
+
+            <RadioButton
+                android:id="@+id/radio_mini_pet"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Mini" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* Sexo"
+            app:layout_constraintStart_toStartOf="@+id/sex_radio"
+            app:layout_constraintTop_toTopOf="@+id/titleSize" />
+
+        <RadioGroup
+            android:id="@+id/sex_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/size_radio"
+            app:layout_constraintTop_toTopOf="@+id/size_radio">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Macho" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Hembra" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="* Agregar fotos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_radio" />
+
+
+        <LinearLayout
+            android:id="@+id/uploadPictures"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#C6C6C6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+            <Button
+                android:id="@+id/takePic"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:backgroundTint="#EEB466"
+                app:icon="@android:drawable/ic_menu_camera" />
+
+            <Button
+                android:id="@+id/choosePic"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#EEB466"
+                android:text="Cargar"
+                app:icon="@android:drawable/ic_menu_gallery" />
+
+            <ImageView
+                android:id="@+id/imageUpload"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/ic_add" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="49dp"
+            android:text="Siguiente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadPictures" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/atp_yellow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1F8F3">
+
+
+        <TextView
+            android:id="@+id/txtVetName"
+            android:layout_width="352dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:foregroundTint="@color/black"
+            android:text="Tus Huellas"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/textDirection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVetLogo" />
+
+        <TextView
+            android:id="@+id/txtVetPhoneNumber"
+            android:layout_width="131dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="2dp"
+            android:text="4932-1234"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetBusinessHours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDirection" />
+
+        <TextView
+            android:id="@+id/txtVetBusinessHours"
+            android:layout_width="178dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="200dp"
+            android:text="Horario de Atención 08:00hs. a 20:00hs."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVetPhoneNumber" />
+
+        <ImageView
+            android:id="@+id/txtVetLogo"
+            android:layout_width="281dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/atp_logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_constraintCircleRadius="50dp" />
+
+        <TextView
+            android:id="@+id/textDirection"
+            android:layout_width="227dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="40dp"
+            android:text="Av. Olazabal 4341"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetPhoneNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVetName" />
+
+        <TextView
+            android:id="@+id/txtShelterLocation"
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawableTint="@color/black"
+            android:text="Barrio"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetLogo"
+            app:layout_constraintEnd_toStartOf="@+id/txtDistance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:drawableEnd="@drawable/paw"
+            android:text="100 mts."
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVetLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtShelterLocation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
